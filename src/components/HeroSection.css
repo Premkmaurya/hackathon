@@ -1,0 +1,29 @@
+.hero-section{
+  width: 100%;
+  height: 100vh;
+}
+.hero-section video{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 140vw;
+  height: 100vh;
+  object-fit: cover;
+}
+.hero-section .heading{
+  position: relative;
+  z-index: 33;
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: normal;
+  padding: 5rem 2rem;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+}
+.note{
+  position: absolute;
+  bottom: 2%;
+  left: 1%;
+  text-decoration: underline;
+}
