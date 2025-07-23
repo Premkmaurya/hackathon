@@ -7,7 +7,7 @@ function App() {
       <div className="hero-section">
         <video
           autoPlay muted loop
-          src="../public/video.mp4"
+          src="https://static.vecteezy.com/system/resources/previews/004/871/644/mp4/close-up-pouring-chocolate-sauce-on-top-whipped-cream-after-the-whipped-cream-starts-to-melt-on-the-white-background-free-video.mp4"
           type="video/mp4">
         </video>
         <Nav />
