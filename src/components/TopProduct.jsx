@@ -10,7 +10,7 @@ function TopProduct() {
 					<h3 className="product-title">Choco Chip Swirl Cupcake</h3>
 				</div>
 				<div className="product-card">
-					<img className="product-image" src="/cookies/cookie-2.png" alt="Chocolate Cake" />
+					<img className="product-image" src="https://ik.imagekit.io/sk6swwncb/cookie-2.png?updatedAt=1753338889105" alt="Chocolate Cake" />
 					<h3 className="product-title">Molten Choco Chip Cookie</h3>
 				</div>
 				<div className="product-card">

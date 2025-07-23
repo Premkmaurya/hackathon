@@ -26,7 +26,7 @@ function App() {
       <TopProduct />
       <div className="banner">
         <div className="outer-container">
-          <img className='bg-img' src="../public/bg.png" alt="" />
+          <img className='bg-img' src="https://ik.imagekit.io/sk6swwncb/bg.png?updatedAt=1753338915242" alt="" />
           <div className="container">
             <div className="content">
               <div className="image-section">
