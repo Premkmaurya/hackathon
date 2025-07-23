@@ -1,0 +1,28 @@
+.main {
+    width: 50%;
+    height: auto;
+}
+
+.container {
+    position: relative;
+    z-index: 33;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.container>div {
+    grid-row: var(--r);
+    grid-column: var(--c);
+    grid-column-end: span 1;
+    grid-row-end: span 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.top-img {
+    width: 8rem;
+    height: 8rem;
+}

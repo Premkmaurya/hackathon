@@ -1,0 +1,105 @@
+/* Login Container */
+.login-container {
+  position: relative;
+  z-index: 33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+}
+
+/* Login Box */
+.login-box {
+  background-color: #fff9f4;
+  border: 1px solid #d6c1b0;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 5px 15px rgba(123, 98, 75, 0.1);
+}
+
+/* Logo */
+.logo {
+  text-align: center;
+  font-family: 'Georgia', serif;
+  color: #5c3d2e;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: #6f4e37;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #d6c1b0;
+  border-radius: 6px;
+  background-color: #fffaf6;
+  font-size: 1rem;
+}
+
+/* Button */
+button {
+  padding: 10px;
+  background-color: #a9745f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #8a5c4a;
+}
+
+/* Sign Up Text */
+.signup-link {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  text-align: center;
+  color: #8d6e63;
+}
+
+.signup-link a {
+  color: #6f4e37;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* 🍰 Responsive Design */
+@media (max-width: 480px) {
+  .login-box {
+    padding: 1.5rem 1rem;
+    max-width: 95%;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  input, button {
+    font-size: 0.95rem;
+    padding: 9px;
+  }
+
+  label {
+    font-size: 0.85rem;
+  }
+}
