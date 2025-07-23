@@ -3,20 +3,29 @@ import "./TopProduct.css"
 function TopProduct() {
 	return (
 		<div className='main'>
-			<div className='container'>
-				<div style={{ '--r': 1, '--c': 1 }}>
-					<img className="top-img" src="../../public/cookies/cookie-1.png" />
+			<h1 className="product-heading">Top Selling Product</h1>
+			<div className="container">
+				<div className="product-card">
+					<img className="product-image" src="/cookies/cookie-1.png" alt="Chocolate Cake" />
+					<h3 className="product-title">Choco Chip Swirl Cupcake</h3>
 				</div>
-				<div style={{ '--r': 1, '--c': 3 }}>
-					<img className="top-img" src="../../public/cookies/cookie-2.png" />
+				<div className="product-card">
+					<img className="product-image" src="/cookies/cookie-2.png" alt="Chocolate Cake" />
+					<h3 className="product-title">Molten Choco Chip Cookie</h3>
 				</div>
-				<div style={{ '--r': 2, '--c': 5 }}>
-					<img className="top-img" src="../../public/cookies/cookie-3.png" />
+				<div className="product-card">
+					<img className="product-image" src="/cookies/cookie-3.png" alt="Chocolate Cake" />
+					<h3 className="product-title">Choco Drizzle Croissant</h3>
 				</div>
-				<div style={{ '--r': 3, '--c': 2 }}>
-					<img className="top-img" src="../../public/cookies/cookie-4.png" />
+				<div className="product-card">
+					<img className="product-image" src="/cookies/cookie-4.png" alt="Chocolate Cake" />
+					<h3 className="product-title">Black Forest Delight</h3>
 				</div>
-			</div >
+				<div className="product-card">
+					<img className="product-image" src="/cookies/cookie-5.png" alt="Chocolate Cake" />
+					<h3 className="product-title">Strawberry Star Cupcake</h3>
+				</div>
+			</div>
 		</div >
 	)
 }
