@@ -2,22 +2,22 @@ import "./PromiseSection.css";
 
 const promises = [
   {
-    iconUrl: '../../public/promise/delivery.webp',
+    iconUrl: '../../public/promise/delivery.png',
     title: "ON-TIME DELIVERY",
     description: "Because no one likes late surprises.",
   },
   {
-    iconUrl: '../../public/promise/cake.webp',
+    iconUrl: '../../public/promise/cake.png',
     title: "500+ DESIGNS",
     description: "Wishes come in all shapes and sizes.",
   },
   {
-    iconUrl: '../../public/promise/gift.webp',
+    iconUrl: '../../public/promise/gift.png',
     title: "2 CR+ ORDERS",
     description: "You can close your eyes and trust us.",
   },
   {
-    iconUrl: '../../public/promise/pastery.webp',
+    iconUrl: '../../public/promise/pastery.png',
     title: "BAKED FRESH",
     description: "Spreading smiles, one slice at a time.",
   },
