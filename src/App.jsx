@@ -31,7 +31,7 @@ function App() {
             <div className="content">
               <div className="image-section">
                 <img
-                  src="../public/cookies/cookie-4.png" 
+                  src="https://ik.imagekit.io/sk6swwncb/vecteezy_german-chocolate-cake-with_25268608.png?updatedAt=1753375360448"
                   alt="Pastry"
                   className="pastry-image"
                 />
