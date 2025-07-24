@@ -68,7 +68,15 @@ const GridMotion = ({ items = [], gradientColor = 'black' }) => {
                 return (
                   <div key={itemIndex} className="row__item">
                     <div className="row__item-inner" style={{ backgroundColor: '#111' }}>
-                      {typeof content === 'string' && content.startsWith('http') ? (
+                      {typeof content === 'string' && content.match(/\.(mp4|webm|ogg)$/) ? (
+                        <video
+                          className="row__item-video"
+                          src={content}
+                          autoPlay
+                          loop
+                          muted
+                        />
+                      ) : typeof content === 'string' && content.startsWith('http') ? (
                         <div
                           className="row__item-img"
                           style={{

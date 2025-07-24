@@ -2,9 +2,20 @@ import HeroSection from '../src/components/HeroSection'
 import GridMotion from './components/GridMotion';
 import PromiseSection from './components/PromiseSection';
 import TopProduct from './components/TopProduct';
-
 const items = [
-  
+  "../public/videos/video-1.mp4",
+  "../public/videos/video-2.mp4",
+  "../public/videos/video-3.mp4",
+  "../public/videos/video-4.mp4",
+  "../public/videos/video-5.mp4",
+  "../public/videos/video-6.mp4",
+  "../public/videos/video-7.mp4",
+  "../public/videos/video-8.mp4",
+  "../public/videos/video-9.mp4",
+  "../public/videos/video-6.mp4",
+  "../public/videos/video-7.mp4",
+  "../public/videos/video-1.mp4",
+  "../public/videos/video-2.mp4",
 ];
 
 function App() {
