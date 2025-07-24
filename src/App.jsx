@@ -1,22 +1,23 @@
 import HeroSection from '../src/components/HeroSection'
+import Footer from './components/Footer';
 import GridMotion from './components/GridMotion';
 import PromiseSection from './components/PromiseSection';
 import TopProduct from './components/TopProduct';
-const items = [
-  "../public/videos/video-1.mp4",
-  "../public/videos/video-2.mp4",
-  "../public/videos/video-3.mp4",
-  "../public/videos/video-4.mp4",
-  "../public/videos/video-5.mp4",
-  "../public/videos/video-6.mp4",
-  "../public/videos/video-7.mp4",
-  "../public/videos/video-8.mp4",
-  "../public/videos/video-9.mp4",
-  "../public/videos/video-6.mp4",
-  "../public/videos/video-7.mp4",
-  "../public/videos/video-1.mp4",
-  "../public/videos/video-2.mp4",
-];
+// const items = [
+//   "../public/videos/video-1.mp4",
+//   "../public/videos/video-2.mp4",
+//   "../public/videos/video-3.mp4",
+//   "../public/videos/video-4.mp4",
+//   "../public/videos/video-5.mp4",
+//   "../public/videos/video-6.mp4",
+//   "../public/videos/video-7.mp4",
+//   "../public/videos/video-8.mp4",
+//   "../public/videos/video-9.mp4",
+//   "../public/videos/video-6.mp4",
+//   "../public/videos/video-7.mp4",
+//   "../public/videos/video-1.mp4",
+//   "../public/videos/video-2.mp4",
+// ];
 
 function App() {
 
@@ -46,7 +47,7 @@ function App() {
                 <ul>
                   <li><strong>Flavor:</strong> Chocolate, nuts, berries</li>
                   <li><strong>Serving Size:</strong> 200g</li>
-                  <li><strong>Price:</strong> $5.99</li>
+                  <li><strong>Price:</strong> &#x20B9;499/-</li>
                 </ul>
               </div>
             </div>
@@ -54,7 +55,8 @@ function App() {
         </div>
       </div>
       <PromiseSection />
-      <GridMotion items={items} />
+      {/* <GridMotion items={items} /> */}
+      <Footer />
     </>
   )
 }

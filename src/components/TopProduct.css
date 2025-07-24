@@ -48,3 +48,50 @@
     margin-top: 3rem;
     text-decoration: 4px solid underline;
 }
+/* 📱 Mobile & Tablet Screens */
+@media (max-width: 1024px) {
+  .container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+    height: auto;
+  }
+
+  .product-card {
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .product-image {
+    height: 12rem;
+  }
+
+  .product-title {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .product-heading {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .product-image {
+    height: 10rem;
+  }
+
+  .product-heading {
+    font-size: 2rem;
+  }
+
+  .product-title {
+    font-size: 0.95rem;
+  }
+}
