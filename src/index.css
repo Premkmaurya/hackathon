@@ -1,12 +1,98 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: Helvetica, sans-serif;
 }
-html,body{
+
+html,
+body {
   width: 100%;
   height: 100%;
   color: rgb(36, 13, 5);
   background-color: white;
+}
+.banner { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.outer-container {
+  width: 100%;
+  margin-top: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.outer-container .bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+  z-index: -3;
+}
+
+.outer-container .container {
+  border-radius: 15px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  z-index: 1; 
+  color: #d9d7d7;
+  background-color: transparent;
+}
+
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.image-section {
+  flex-basis: 40%;
+}
+
+.pastry-image {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.text-section {
+  flex-basis: 50%;
+}
+
+.text-section h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.text-section ul {
+  list-style: none;
+  font-size: 14px;
+}
+
+.text-section ul li {
+  margin-bottom: 10px;
+}
+
+.text-section ul li strong {
+  font-weight: bold;
 }

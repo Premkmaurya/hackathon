@@ -1,0 +1,66 @@
+.promise-section {
+  background: #fff4f2;
+  text-align: center;
+  padding: 3rem 1rem;
+  font-family: Arial, sans-serif;
+  color: rgb(36, 13, 5); /* Chocolate tone */
+}
+
+.promise-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.promise-subheading {
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.promise-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.promise-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  flex: 1 1 220px;
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.promise-card:hover {
+  transform: translateY(-5px);
+}
+
+.promise-icon {
+  margin-bottom: 1rem;
+}
+
+.promise-icon img {
+  width: 6rem;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+.promise-title {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.promise-description {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
