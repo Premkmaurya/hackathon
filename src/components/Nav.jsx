@@ -13,6 +13,10 @@ function Nav() {
 		sidebarRef.current.classList.add("active");
 		menuRef.current.style.display = "none";
 	};
+	const hideSidebar = () => {
+		sidebarRef.current.classList.remove("active");
+		menuRef.current.style.display = "block";
+	};
 	useEffect(() => {
 		const handleScroll = () => {
 			const currentScrollY = window.scrollY;
@@ -31,10 +35,6 @@ function Nav() {
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, [lastScrollY]);
 
-	const hideSidebar = () => {
-		sidebarRef.current.classList.remove("active");
-		menuRef.current.style.display = "block";
-	};
 	return (
 		<>
 			<div  className={`nav ${showNavbar ? "nav-visible" : "nav-hidden"}`}>
@@ -50,10 +50,10 @@ function Nav() {
 			<div ref={sidebarRef} className='sidebar'>
 				<ul>
 					<i onClick={hideSidebar} className="ri-close-fill"></i>
-					<Link to="/" className='li'>Home</Link>
-					<Link to="/products" className='li'>Products</Link>
-					<Link to="/login" className='li'>Login</Link>
-					<Link to="about" className='li'>about</Link>
+					<Link onClick={hideSidebar} to="/" className='li'>Home</Link>
+					<Link onClick={hideSidebar} to="/products" className='li'>Products</Link>
+					<Link onClick={hideSidebar} to="/login" className='li'>Login</Link>
+					<Link onClick={hideSidebar} to="about" className='li'>about</Link>
 				</ul>
 			</div>
 		</>

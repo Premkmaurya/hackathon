@@ -23,8 +23,8 @@ function Home() {
   return (
     <>
       <HeroSection />
-      <TopProduct />
       <ProductDelivered />
+      <TopProduct />
       <div className="banner">
         <div className="outer-container">
           <img className='bg-img' src="https://ik.imagekit.io/sk6swwncb/bg.png?updatedAt=1753338915242" alt="" />
