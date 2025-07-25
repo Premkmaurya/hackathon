@@ -6,12 +6,13 @@ import Login from '../pages/Login'
 import Register from '../pages/Register'
 
 function MainRoutes() {
+  
   return (
 
       <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Product />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<Login/>} />
           <Route path="/signup" element={<Register />} />
           <Route path="/about" element={<About />} />
         </Routes>

@@ -1,9 +1,11 @@
 import "./Login.css"
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 
 function Login() {
+  const Navigate = useNavigate();
+  const { setUser } = useContext(UserContext)
   const {
     register,
     handleSubmit,
@@ -12,7 +14,9 @@ function Login() {
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log('Login data:', data);
+    localStorage.setItem("user", JSON.stringify(data));
+    setUser(data); 
+    Navigate('/')
     reset()
   };
 
