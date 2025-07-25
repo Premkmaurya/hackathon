@@ -5,10 +5,9 @@
 }
 
 .products{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+  gap: 2rem;
     width: 100%;
     gap: 4rem;
     margin-top: 1rem;
@@ -17,3 +16,8 @@
     height: auto;
 }
 
+@media (max-width: 768px) {
+  .products {
+    gap: 1rem;
+  }
+}
