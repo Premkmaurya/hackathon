@@ -3,7 +3,7 @@
   text-align: center;
   padding: 3rem 1rem;
   font-family: Arial, sans-serif;
-  color: rgb(36, 13, 5); /* Chocolate tone */
+  color: rgb(36, 13, 5); 
 }
 
 .promise-heading {
@@ -63,4 +63,24 @@
 .promise-description {
   font-size: 0.95rem;
   line-height: 1.4;
+}
+@media (max-width:768px) {
+  .promise-heading{
+    font-size: 1.7rem;
+  }
+  .promise-subheading{
+    font-size: 0.9rem;
+  }
+  .promise-card{
+    max-width: 180px;
+  }
+  .promise-icon img{
+    width: 4rem;
+  }
+  .promise-title{
+    font-size: 0.8rem;
+  }
+  .promise-description{
+    font-size: 0.7rem;
+  }
 }

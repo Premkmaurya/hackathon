@@ -12,7 +12,8 @@ body {
   color: rgb(36, 13, 5);
   background-color: white;
 }
-.banner { 
+
+.banner {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,21 +34,23 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; 
-  object-fit: cover; 
+  height: 100%;
+  object-fit: cover;
   z-index: -3;
 }
 
 .outer-container .container {
   border-radius: 15px;
-  padding: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
-  z-index: 1; 
+  z-index: 1;
   color: #d9d7d7;
   background-color: transparent;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  width: 90%;
 }
 
 
@@ -73,15 +76,15 @@ body {
 }
 
 .text-section h1 {
-  font-size: 36px;
+  font-size: 2.2rem;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
 .description {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 1.3rem;
 }
 
 .text-section ul {
@@ -90,9 +93,81 @@ body {
 }
 
 .text-section ul li {
-  margin-bottom: 10px;
+  margin-bottom: 0.8rem;
 }
 
 .text-section ul li strong {
   font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .outer-container .container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .pastry-image {
+    width: 60%;
+  }
+
+  .content {
+    gap: 1.5rem;
+  }
+
+  .text-section,
+  .image-section {
+    flex-basis: 100%;
+  }
+
+  .text-section h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  }
+
+  .description {
+    font-size: 0.95rem;
+  }
+
+  .text-section ul {
+    font-size: 0.9rem;
+  }
+
+  .pastry-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .outer-container .container {
+    padding: 1.5rem 1rem;
+    width: 95%;
+  }
+  .content{
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .pastry-image {
+    width: 50%;
+  }
+
+  .text-section h1 {
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .description {
+    font-size: 0.6rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .text-section ul {
+    font-size: 0.6rem;
+    margin: 1rem 0 3.3rem 0;
+  }
+
+  .text-section ul li {
+    margin-bottom: 0rem;
+  }
 }

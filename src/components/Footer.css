@@ -1,6 +1,6 @@
 .footer {
   background-color: rgb(36, 13, 5);
-  color: white;
+  color: #d9d7d7;
   padding: 3rem 1.5rem;
   font-family: Arial, sans-serif;
 }
@@ -26,30 +26,21 @@
 
 .email-box input {
   padding: 0.8rem 1rem;
-  border-radius: 30px 0 0 30px;
+  border-radius: 10px;
   border: none;
   width: 300px;
   font-size: 1rem;
   outline: none;
 }
 
-.email-box button {
-  padding: 0.8rem 1.2rem;
-  background-color: white;
-  color: #d9d7d7;
-  border: none;
-  border-radius: 0 30px 30px 0;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
 
 .footer-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
   margin-top: 3rem;
 }
+
 
 .footer-column {
   flex: 1 1 220px;
@@ -99,14 +90,9 @@
 }
 
 @media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
   .footer-column {
-    margin-bottom: 2rem;
+    margin-bottom: 0;
+    flex: 1 1 70px;
   }
 
   .email-box {
@@ -114,8 +100,7 @@
     align-items: center;
   }
 
-  .email-box input,
-  .email-box button {
+  .email-box input {
     width: 90%;
     border-radius: 30px;
     margin: 0.3rem 0;

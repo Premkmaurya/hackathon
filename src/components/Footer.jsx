@@ -8,7 +8,6 @@ const Footer = () => {
         <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
         <div className="email-box">
           <input type="email" placeholder="Enter Email Address" />
-          <button>&rarr;</button>
         </div>
       </div>
 

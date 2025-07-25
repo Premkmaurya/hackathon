@@ -14,7 +14,7 @@ function HeroSection() {
             <div className='heading'>
                 <h1>100% natural</h1>
                 <h1>homemade</h1>
-                <h1>fresh cookie</h1>
+                <h1>fresh cake</h1>
             </div>
             <span className='note'>chocolate make everything better</span>
         </div>
