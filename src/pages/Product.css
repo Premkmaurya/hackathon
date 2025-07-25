@@ -8,8 +8,17 @@
 	text-decoration: 4px underline;
 	margin-bottom: 2rem;
 }
-.products{
-	 display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+  gap: 2rem;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
+@media (max-width: 768px) {
+  .products {
+    gap: 1rem;
+  }
+}
+

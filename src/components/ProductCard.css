@@ -16,7 +16,8 @@
 
 .card-image img {
   width: 90%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
   display: block;
 }
 
@@ -81,12 +82,17 @@
 }
 @media (max-width:768px) {
   .card{
+    width: 180px;
     margin-bottom: 1rem;
   }
   .card-image img{
     width: 70%;
   }
-  .product-title{
-    margin: 0.2rem 0;
-  } 
+  .product-title {
+    font-size: 0.9rem;
+  }
+
+  .price, .offer, .rating {
+    font-size: 0.8rem;
+  }
 }
