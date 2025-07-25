@@ -3,6 +3,7 @@ import Footer from './components/Footer';
 import GridMotion from './components/GridMotion';
 import PromiseSection from './components/PromiseSection';
 import TopProduct from './components/TopProduct';
+import ProductDelivered from './components/ProductDelivered';
 // const items = [
 //   "../public/videos/video-1.mp4",
 //   "../public/videos/video-2.mp4",
@@ -25,6 +26,7 @@ function App() {
     <>
       <HeroSection />
       <TopProduct />
+      <ProductDelivered />
       <div className="banner">
         <div className="outer-container">
           <img className='bg-img' src="https://ik.imagekit.io/sk6swwncb/bg.png?updatedAt=1753338915242" alt="" />

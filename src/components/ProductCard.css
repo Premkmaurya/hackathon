@@ -1,0 +1,83 @@
+.card {
+  width: 240px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
+.card-image img {
+  width: 90%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 0.8rem 1rem 1.2rem;
+}
+
+.product-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  color: #222;
+}
+
+.price-section {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-weight: bold;
+  color: #000;
+}
+
+.mrp {
+  text-decoration: line-through;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.offer {
+  color: red;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.rating-section {
+  font-size: 0.9rem;
+  color: #222;
+}
+
+.rating {
+  color: green;
+  font-weight: bold;
+}
+
+.reviews {
+  color: #555;
+  margin-left: 4px;
+}
+
+.wishlist-icon {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  font-size: 1.2rem;
+  color: #555;
+  cursor: pointer;
+}
+.ri-heart-2-fil{
+  color: red;
+}

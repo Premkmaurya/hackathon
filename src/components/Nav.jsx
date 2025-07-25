@@ -2,10 +2,17 @@ import React, { useRef } from 'react'
 import "./Nav.css"
 
 function Nav() {
-	const sidebarRef = useRef()
-	const showSidebar = () =>{
-		 sidebarRef.current.style.disply = "flex";
-	}
+	const sidebarRef = useRef(null)
+	const menuRef = useRef(null)
+	const showSidebar = () => {
+  sidebarRef.current.classList.add("active");
+  menuRef.current.style.display = "none";
+};
+
+const hideSidebar = () => {
+  sidebarRef.current.classList.remove("active");
+  menuRef.current.style.display = "block";
+};
 	return (
 		<>
 			<div className="nav">
@@ -15,11 +22,12 @@ function Nav() {
 					<li className='hideOnMobile'>Products</li>
 					<li className='hideOnMobile'>Login</li>
 					<li className='hideOnMobile'>about</li>
-					<li onClick={showSidebar}><i className="ri-menu-line"></i></li>
+					<li onClick={showSidebar}><i ref={menuRef} className="ri-menu-line"></i></li>
 				</ul>
 			</div>
 			<div ref={sidebarRef} className='sidebar'>
 				<ul>
+					<i onClick={hideSidebar} className="ri-close-fill"></i>
 					<li>Home</li>
 					<li>Products</li>
 					<li>Login</li>

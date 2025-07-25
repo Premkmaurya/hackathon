@@ -3,7 +3,7 @@ import "./TopProduct.css"
 function TopProduct() {
 	return (
 		<div className='main'>
-			<h1 className="product-heading">Top Selling Product</h1>
+			<h1 className="product-heading">What We Deliverd</h1>
 			<div className="container">
 				<div className="product-card">
 					<img className="product-image" src="/cookies/cookie-1.png" alt="Chocolate Cake" />
