@@ -3,21 +3,7 @@ import TopProduct from '../components/TopProduct'
 import ProductDelivered from '../components/ProductDelivered'
 import PromiseSection from '../components/PromiseSection'
 import Footer from '../components/Footer'
-// const items = [
-//   "../public/videos/video-1.mp4",
-//   "../public/videos/video-2.mp4",
-//   "../public/videos/video-3.mp4",
-//   "../public/videos/video-4.mp4",
-//   "../public/videos/video-5.mp4",
-//   "../public/videos/video-6.mp4",
-//   "../public/videos/video-7.mp4",
-//   "../public/videos/video-8.mp4",
-//   "../public/videos/video-9.mp4",
-//   "../public/videos/video-6.mp4",
-//   "../public/videos/video-7.mp4",
-//   "../public/videos/video-1.mp4",
-//   "../public/videos/video-2.mp4",
-// ];
+import '../../src/index.css'
 
 function Home() {
   return (
@@ -39,7 +25,7 @@ function Home() {
               </div>
               <div className="text-section">
                 <h1>Whoosh</h1>
-                <p className="description">
+                <p className="banner-description">
                   Savor the perfect blend of flavors with our Whoosh pastry. Packed with a rich
                   chocolate filling and topped with crunchy nuts and vibrant berries, it's a treat
                   that's as delightful to the eye as it is to the tastebuds.
@@ -55,7 +41,6 @@ function Home() {
         </div>
       </div>
       <PromiseSection />
-      {/* <GridMotion items={items} /> */}
       <Footer />
     </>
   )

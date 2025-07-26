@@ -43,9 +43,9 @@
   padding: 16px;
   margin: 0;
 }
-.product-heading{
+.main .delivered-product-heading{
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-top: 3rem;
     text-decoration: 4px solid underline;
 }
@@ -71,8 +71,9 @@
     padding: 12px;
   }
 
-  .product-heading {
+  .main .delivered-product-heading {
     font-size: 2.5rem;
+    text-align: center;
   }
 }
 
@@ -81,8 +82,8 @@
     width: 80%;
   }
 
-  .product-heading {
-    font-size: 1rem;
+  .main .delivered-product-heading {
+    font-size: 2.4rem;
   }
   .product-title {
     font-size: 0.95rem;
@@ -90,11 +91,11 @@
 }
 @media (max-width: 425px) {
   .product-card {
-    width: 70%;
+    width: 90%;
   }
 
-  .product-heading {
-    font-size: 1rem;
+  .main .delivered-product-heading{
+    font-size: 2rem;
   }
   .product-title {
     font-size: 0.95rem;

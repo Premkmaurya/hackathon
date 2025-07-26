@@ -1,12 +1,12 @@
-import "./TopProduct.css"
+import "./ProductDelivered.css"
 
 function TopProduct() {
 	return (
 		<div className='main'>
-			<h1 className="product-heading">What We Deliverd</h1>
+			<h1 className="delivered-product-heading">What We Deliverd</h1>
 			<div className="container">
 				<div className="product-card">
-					<img className="product-image" src="../../public/cookies/about-1.png" alt="Chocolate Cake" />
+					<img className="product-image" src="https://ik.imagekit.io/sk6swwncb/about-1.png?updatedAt=1753507141345" alt="Chocolate Cake" />
 					<h3 className="product-title">cake</h3>
 				</div>
 				<div className="product-card">

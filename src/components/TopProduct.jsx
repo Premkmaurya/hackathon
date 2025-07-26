@@ -1,4 +1,4 @@
-import './ProductDelivered.css'
+import './TopProduct.css'
 import ProductCard from "./ProductCard";
 
 
@@ -6,7 +6,7 @@ import ProductCard from "./ProductCard";
 const ProductDelivered = () => {
   return (
    <div>
-    <h1 className="product-heading">Top Selling Product</h1>
+    <h1 className="top-product-heading">Top Selling Product</h1>
     <div className="products">
       <ProductCard img="https://i.pinimg.com/1200x/00/93/9a/00939a74462ad60b7d521a2665e8b170.jpg" title="Oats & Raisin Cookies" price={199} off={10} rating={4.1} />
       <ProductCard
