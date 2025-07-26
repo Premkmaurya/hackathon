@@ -2,6 +2,7 @@ import "./Login.css"
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { Link,useNavigate } from 'react-router-dom';
+import { toast,Slide } from 'react-toastify';
 
 function Login() {
   const Navigate = useNavigate();
@@ -15,6 +16,17 @@ function Login() {
   const onSubmit = (data) => {
     localStorage.setItem("user", JSON.stringify(data)); 
     Navigate('/')
+    toast.success('Login successfully', {
+       position: "top-right",
+       autoClose: 5000,
+       hideProgressBar: false,
+       closeOnClick: true,
+       pauseOnHover: true,
+       draggable: true,
+       progress: undefined,
+       theme: "dark",
+       transition: Slide,
+     });
     reset()
   };
   

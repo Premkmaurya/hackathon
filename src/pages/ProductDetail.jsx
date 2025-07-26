@@ -1,13 +1,30 @@
 import React, { useState } from 'react';
 import {useLocation,useNavigate} from 'react-router-dom';
 import "./ProductDetail.css"
+import { toast,Slide } from 'react-toastify';
 
 function ProductDetail() {
   const [weight, setWeight] = useState('0.5 Kg');
   const location = useLocation()
   const navigate = useNavigate()
   const data = location.state;
-  console.log(data)
+  
+  const buyProduct = () =>{
+       toast.success('Order Confirmed.', {
+       position: "top-right",
+       autoClose: 5000,
+       hideProgressBar: false,
+       closeOnClick: true,
+       pauseOnHover: true,
+       draggable: true,
+       progress: undefined,
+       theme: "dark",
+       transition: Slide,
+     });
+       navigate('/products')
+  }
+
+
   return (
     <div className="cake-container">
       <div className="cake-image-section">
@@ -55,7 +72,7 @@ function ProductDetail() {
         </div>
 
         <div className="action-buttons">
-          <button className="buy-now">Buy Now</button>
+          <button onClick={buyProduct} className="buy-now">Buy Now</button>
         </div>
       </div>
     </div>
