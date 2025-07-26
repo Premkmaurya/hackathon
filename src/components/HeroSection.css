@@ -18,24 +18,21 @@
   font-weight: 500;
   font-size: 2.5rem;
   line-height: normal;
-  padding: 5rem 2rem;
+  padding: 9rem 2rem;
   text-transform: capitalize;
   display: flex;
   flex-direction: column;
 }
-.note{
-  position: absolute;
-  bottom: 2%;
-  left: 1%;
-  text-decoration: underline;
-}
 
 @media (max-width:768px){
-  .note{
-    color: #d9d7d7;
-  }
   .hero-section .heading{
     font-size: 1.77rem;
-    padding: 0.2rem 0.6rem;
+    padding: 7rem 0.6rem;
+  }
+}
+@media (max-width:425px){
+  .hero-section .heading{
+    font-size: 1.4rem;
+    padding: 6rem 0.9rem;
   }
 }

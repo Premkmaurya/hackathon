@@ -1,12 +1,14 @@
 .prodcut-container{
   background: #fff;
-  margin-top: 5rem;
 }
 .prodcut-container h2{
 	text-align: center;
 	font-size: 2.3rem;
 	text-decoration: 4px underline;
 	margin-bottom: 2rem;
+}
+.product-div{
+  padding-top: 5rem;
 }
 .products {
   display: grid;

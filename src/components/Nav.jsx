@@ -7,7 +7,7 @@ function Nav() {
   const menuRef = useRef(null);
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const { user, setUser } = useContext(UserContext);
+  const [user,setUser] = useState(null);
 
   const showSidebar = () => {
     sidebarRef.current.classList.add("active");
@@ -35,11 +35,12 @@ function Nav() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
   useEffect(() => {
-    const storedUser = localStorage.getItem("user");
-    if (storedUser) {
-      setUser(JSON.parse(storedUser)); // 🔥 Parse string back to object
-    }
-  }, []);
+            const storedUser = localStorage.getItem('user');
+            if (storedUser) {
+                setUser(storedUser);
+            }
+        }, []);
+
 
   return (
     <>
@@ -58,14 +59,12 @@ function Nav() {
           <Link className="hideOnMobile li" to="/products">
             Products
           </Link>
-          {user ? (
-            <>
-              {" "}
-              <Link className="hideOnMobile li" to="/profile">{user.username || "Profile"}</Link>{" "}
-            </>
-          ) : (
-            <Link className="hideOnMobile li" to="/login">Login</Link>
-          )}{" "}
+          
+              {user ? 
+              <Link className="hideOnMobile li" to="/profile">Profile</Link>
+                      :   
+              <Link className="hideOnMobile li" to="/login">Login</Link>
+                }
           <Link className="hideOnMobile li" to="about">
             about
           </Link>{" "}

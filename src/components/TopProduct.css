@@ -9,7 +9,6 @@
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
     gap: 4rem;
     width: 100%;
-    gap: 4rem;
     margin-top: 1rem;
     padding: 20px;
     padding-top: 0;

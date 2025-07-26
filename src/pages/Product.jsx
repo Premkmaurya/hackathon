@@ -6,7 +6,8 @@ const Product = () => {
   return (
     <>
     <div className="prodcut-container">
-  <h2>Cakes</h2>
+    <div className="product-div">
+      <h2>Cakes</h2>
   <div className="products">
    <ProductCard
     img="https://e7.pngegg.com/pngimages/890/140/png-clipart-black-forest-cake-birthday-cake-chocolate-cake-christmas-cake-fruitcake-wedding-cake-birthday-cake-cream-food.png"
@@ -77,6 +78,7 @@ const Product = () => {
     <ProductCard img="https://i.pinimg.com/736x/4c/e8/52/4ce852704953aba4e684641cef96734f.jpg" title="Strawberry Cupcake" price={169} off={9} rating={4.4} />
     <ProductCard img="https://i.pinimg.com/736x/00/92/e4/0092e4e54d06caa4e0c9ed0167b4bc25.jpg" title="Red Velvet Cupcake" price={189} off={11} rating={4.6} />
   </div>
+    </div>
 </div>
 
     </>

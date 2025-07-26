@@ -5,7 +5,6 @@ import { Link,useNavigate } from 'react-router-dom';
 
 function Login() {
   const Navigate = useNavigate();
-  const { setUser } = useContext(UserContext)
   const {
     register,
     handleSubmit,
@@ -14,11 +13,11 @@ function Login() {
   } = useForm();
 
   const onSubmit = (data) => {
-    localStorage.setItem("user", JSON.stringify(data));
-    setUser(data); 
+    localStorage.setItem("user", JSON.stringify(data)); 
     Navigate('/')
     reset()
   };
+  
 
   return (
     <div className="login-container">
