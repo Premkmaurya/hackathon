@@ -4,8 +4,20 @@ import ProductDelivered from '../components/ProductDelivered'
 import PromiseSection from '../components/PromiseSection'
 import Footer from '../components/Footer'
 import '../../src/index.css'
+import Lenis from 'lenis'
 
 function Home() {
+    // Initialize Lenis
+const lenis = new Lenis();
+
+// Use requestAnimationFrame to continuously update the scroll
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);  
+
   return (
     <>
       <HeroSection />

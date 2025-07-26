@@ -12,6 +12,9 @@
     margin-top: 1rem;
     padding: 20px;
     padding-top: 0;
+    place-items: center;
+    justify-content: center; 
+    align-items: center; 
     height: auto;
 }
 

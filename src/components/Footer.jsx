@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="newsletter">
         <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
-        <div className="email-box">
+        <div classNameName="email-box">
           <input type="email" placeholder="Enter Email Address" />
         </div>
       </div>
@@ -16,11 +16,10 @@ const Footer = () => {
           <h3 className="footer-logo">bakingo</h3>
           <p>&copy; 2025</p>
           <div className="social-icons">
-            <i className="fab fa-facebook-f"></i>
-            <i className="fab fa-instagram"></i>
-            <i className="fab fa-x-twitter"></i>
-            <i className="fab fa-linkedin-in"></i>
-            <i className="fab fa-youtube"></i>
+            <i className="ri-instagram-line"></i>
+            <i className="ri-facebook-fill"></i>
+            <i className="ri-twitter-x-line"></i>
+            <i className="ri-youtube-fill"></i>
           </div>
         </div>
 

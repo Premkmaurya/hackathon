@@ -50,7 +50,7 @@ function Nav() {
 	{showNavbar ? "nav-visible" : "nav-hidden"}`}
       >
         {" "}
-        <h1>Wix</h1>
+        <h1>Bakingo</h1>
         <ul>
           {" "}
           <Link className="hideOnMobile li" to="/">
