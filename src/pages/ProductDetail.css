@@ -1,0 +1,181 @@
+.app {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 30px;
+}
+
+.cake-container {
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+  padding-top: 6rem;
+}
+
+.cake-image-section {
+  flex: 1 1 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+
+.cake-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  position: sticky;
+}
+
+.badge {
+  background: gold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.cake-details {
+  flex: 1 1 400px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.cake-details h2 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+
+.rating {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.rating a {
+  color: #0071cc;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.price {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.current-price {
+  color: #d32f2f;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: gray;
+  margin-right: 10px;
+}
+
+.discount {
+  color: #d32f2f;
+}
+
+.description {
+  color: #444;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.weight-section {
+  margin-bottom: 15px;
+}
+
+.weight-section p {
+  margin: 0 0 10px;
+}
+
+.weight-btn {
+  padding: 8px 16px;
+  margin: 5px 5px 0 0;
+  color: rgb(36, 13, 5);
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.3s ease;
+}
+
+.weight-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.weight-btn.selected {
+  background: #f44336;
+  color: white;
+  border-color: #f44336;
+}
+
+.message-section {
+  margin: 15px 0;
+}
+
+.message-section input,.delivery-info input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: #fff7f3;
+  box-sizing: border-box;
+}
+
+.delivery-info {
+  font-size: 0.95rem;
+  margin: 15px 0;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.buy-now {
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+
+.buy-now {
+  background: #d32f2f;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .cake-container {
+    flex-direction: column;
+  }
+
+  .cake-details {
+    padding: 20px 10px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+ .buy-now {
+    width: 100%;
+  }
+}

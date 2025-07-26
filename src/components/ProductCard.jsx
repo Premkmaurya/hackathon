@@ -1,9 +1,15 @@
 import React from 'react'
 import './ProductCard.css'
+import { useNavigate } from "react-router-dom";
 
 function ProductCard(props) {
+  const navigate = useNavigate()
+  const showDetails = () =>{
+
+     navigate('/product-detail',{state:props})
+  }
 	return (
-		<div className="card">
+		<div onClick={showDetails} className="card">
       <div className="card-image">
         <img
           src={props.img} 

@@ -4,6 +4,7 @@ import About from '../pages/About'
 import Product from '../pages/Product'
 import Login from '../pages/Login'
 import Register from '../pages/Register'
+import ProductDetail from '../pages/ProductDetail'
 
 function MainRoutes() {
   
@@ -15,6 +16,8 @@ function MainRoutes() {
           <Route path="/login" element={<Login/>} />
           <Route path="/signup" element={<Register />} />
           <Route path="/about" element={<About />} />
+          <Route path="/Product-detail" element={<ProductDetail />} />
+
         </Routes>
   )
 }
